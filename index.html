@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+
+<meta name="description" content="Investigador digital especializado em golpes online, análise de IP, rastreamento de dados e segurança de redes Wi-Fi.">
+
+<meta name="keywords" content="investigação digital, rastreamento IP, golpes PIX, segurança WiFi, OSINT, análise de dados">
+
+<meta name="author" content="Investigador Digital">
+
+<meta name="robots" content="index, follow">
+
+<script>
+const titles = [
+"🔍 Sistema de Análise Ativo",
+"📡 Monitoramento em Tempo Real",
+"🛰️ Rastreamento de Rede",
+"🧠 Inteligência de Dados",
+"⚙️ Analisando Atividade...",
+"🌐 Scanner de Rede",
+"🕵️ Modo Investigação",
+"📡 Coletando Dados...",
+"🔐 Sistema Seguro Online"
+];
+
+const baseTitle = "Investigador Digital | Rastreamento de Golpes, IP e Segurança Wi-Fi";
+
+document.title = baseTitle + " • " + titles[Math.floor(Math.random() * titles.length)];
+</script>
+
+<title>Investigador Digital | Rastreamento de Golpes, IP e Segurança Wi-Fi</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"><style>
+body{
+  margin:0;
+  font-family:'Orbitron', sans-serif;
+  background:#050505;
+  color:#0ff;
+}
+
+.neon{
+  color:#0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+}
+
+header{
+  text-align:center;
+  padding:40px 20px;
+}
+
+header h1{
+  font-size:2.5em;
+}
+
+section{
+  padding:40px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  background:rgba(0,0,0,0.6);
+  border:1px solid #0ff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:10px;
+  box-shadow:0 0 15px #0ff;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 30px #0ff;
+}
+
+button{
+  background:transparent;
+  border:2px solid #0ff;
+  color:#0ff;
+  padding:10px 20px;
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#0ff;
+  color:#000;
+  box-shadow:0 0 20px #0ff;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #0ff;
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+</style></head><body><canvas id="bg"></canvas>
+
+<header>
+  <h1 class="neon">INVESTIGADOR DIGITAL</h1>
+  <p>Serviços avançados na internet • Futuro da investigação online</p>
+</header><section>
+  <div class="card">
+    <h2 class="neon">🔎 O que eu faço</h2>
+    <p>
+      Ajudo pessoas que sofreram golpes a encontrar informações importantes.
+      Investigo dados digitais, contas que receberam PIX e rastros online.
+      Localizo possíveis endereços e identificações com base em análise digital.
+      Também realizo investigações em sites e análise de IP.
+      Tudo feito com técnicas modernas de investigação online.
+    </p>
+  </div>  <div class="card">
+    <h2 class="neon">🧠 Serviços</h2>
+    <ul>
+      <li>Investigação de golpes digitais</li>
+      <li>Análise de contas que receberam PIX</li>
+      <li>Busca de informações públicas (OSINT)</li>
+      <li>Rastreamento de perfis e identidades</li>
+      <li>Localização de possíveis endereços</li>
+      <li>Investigação de sites e domínios</li>
+      <li>Análise e rastreamento de IP</li>
+      <li>Verificação de segurança de redes Wi‑Fi (painel de análise)</li>
+      <li>Detecção de atividades suspeitas na rede</li>
+      <li>Monitoramento e análise em tempo real</li>
+    </ul>
+  </div>  <div class="card">
+    <h2 class="neon">🌐 Investigação Web</h2>
+    <p>
+      Análise completa de sites, servidores e estruturas digitais.
+      Identificação de origem, tecnologias utilizadas e possíveis rastros.
+      Investigação de IP para entender localização aproximada e atividade online.
+    </p>
+  </div>  <div class="card">
+    <h2 class="neon">📡 Segurança Wi‑Fi</h2>
+    <p>
+      Análise da sua rede Wi‑Fi para identificar dispositivos desconhecidos,
+      atividades suspeitas e possíveis vulnerabilidades.
+      Painel simples para verificar se há algo estranho e melhorar a segurança.
+    </p>
+  </div>  <div class="card">
+    <h2 class="neon">🚀 Diferencial</h2>
+    <p>
+      Tecnologia, anonimato e rapidez.
+      Resultados com precisão usando inteligência digital.
+    </p>
+  </div>  <div class="card">
+  <h2 class="neon">📲 Contato</h2>
+  <a href="https://wa.me/5521995442672?text=Olá,%20vim%20pelo%20site" target="_blank">
+  <button>Falar no WhatsApp</button>
+</a>
+</div>
+  </section><footer>
+  <p>© 2026 Investigador Digital | Futuro Tech</p>
+</footer><script>
+const canvas = document.getElementById('bg');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<100;i++){
+  particles.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    size:Math.random()*2,
+    speed:Math.random()*1
+  });
+}
+
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  ctx.fillStyle = '#0ff';
+
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+    ctx.fill();
+
+    p.y += p.speed;
+    if(p.y > canvas.height){
+      p.y = 0;
+      p.x = Math.random()*canvas.width;
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+<a href="https://wa.me/5521995442672?text=Olá,%20vim%20pelo%20site" target="_blank" class="whatsapp-float">
+💬
+</a>
+
+<style>
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#0ff;
+  color:#000;
+  font-size:24px;
+  padding:15px;
+  border-radius:50%;
+  box-shadow:0 0 15px #0ff;
+  text-decoration:none;
+  z-index:999;
+}
+.whatsapp-float:hover{
+  transform:scale(1.1);
+}
+</style>
+</body>
+</html>
